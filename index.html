@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Basic Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous"/>
+<!-- Favicon link -->
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+<!-- Style CSS Link -->
+    <link rel="stylesheet" href="style.css">
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Hungry Monster</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" id="logo-size" href="#"><img src="images/logo.jpg" alt="logo">
+                    <span id="title-first">Hungry <span id="title-last">Monster</span></span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link pr-4" href="#">Home</a>
+                        <a class="nav-link pr-4" href="#">About</a>
+                        <a class="nav-link pr-4" href="#">Recipes</a>
+                        <a class="nav-link pr-4" href="#">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="col-10  col-md-8 col-lg-7 col-xl-6 m-auto pt-1 pb-2">
+                <div class="input-group mb-1">
+
+                    <input id="input-meal-name" type="text" required class="form-control" placeholder="Search for meal">
+                    <div class="input-group-append">
+                        <button id="search-btn" type="button" class="btn">Search</button>
+                    </div>
+                </div>
+
+                <div style="height: 30px;margin-bottom: 10px;">
+                    <p id="warning-text"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div id="meal-details" class="container">
+            <div id="meal-details-display" class="row row-cols-1  row-cols-md-2 g-1">
+
+            </div>
+            <div id="instruction-display">
+
+            </div>
+        </div>
+        <div class="meal-container mb-5">
+            <div id="meal-list" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js">
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
